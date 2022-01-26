@@ -1,8 +1,8 @@
 def calculatePay():
     
     # This first line is provided for you
-    hrs = input("Enter Hours: ")
     rte = input("Enter Rate: ")
+    hrs = input("Enter Hours: ")
     fhrs = float(hrs)
     frte = float(rte)
     if fhrs > 40 :
