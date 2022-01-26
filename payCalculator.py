@@ -3,8 +3,12 @@ def calculatePay():
     # This first line is provided for you
     rte = input("Enter Rate: ")
     hrs = input("Enter Hours: ")
-    fhrs = float(hrs)
-    frte = float(rte)
+    try:
+        fhrs = float(hrs)
+        frte = float(rte)
+    except:
+        print("Error, please enter a valid number.")
+        quit()
     if fhrs > 40 :
         reg = frte * fhrs
         otp = (fhrs - 40.0) * (frte * 0.5)
