@@ -7,7 +7,7 @@ def calculatePay():
         fhrs = float(hrs)
         frte = float(rte)
     except:
-        print("Error, please enter a valid number.")
+        print("Error, please enter numeric input.")
         quit()
     if fhrs > 40 :
         reg = frte * fhrs
